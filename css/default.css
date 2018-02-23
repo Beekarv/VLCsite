@@ -5,7 +5,6 @@
 	font-family: "Lato", sans-serif
 }
 
-
 /* Removendo alguns elementos padrão desnecessários */
 body {
 	overflow-x: hidden;
@@ -134,7 +133,6 @@ nav .painel {
 
 .n-wrap {
 	float: left;
-	margin-left: 35px;
 }
 
 .email-sub {
