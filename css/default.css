@@ -131,6 +131,17 @@ nav .painel {
 	color: #FFF;
 }
 
+/* MAILCHIMP */
+#mc_embed_signup{  
+    font: 14px "Lato", sans-serif; 
+    width: 100%;
+}
+
+#mc_embed_signup input.email {
+    width: 290px !important;
+}
+/* --------- */
+
 .n-wrap {
     width: 300px;
 	float: none;

@@ -61,11 +61,15 @@
     border-top: 3px solid #ff5701;
 }
 
-h2, .v-desc{
+h2, h3, .H3desc, .v-desc{
     float: left;
     clear: both;
     margin-left: 10%;
     color: #ff5701;
+}
+
+h2, h3 {
+    font-size: 5vmin;
 }
 
 .s-info {
@@ -147,12 +151,6 @@ h2, .v-desc{
 	height: auto;
 	float: left;
 	margin-top: 20px;
-}
-
-h3, .H3desc {
-	width: 100%;
-	text-align: center;
-	color: #e67e22;
 }
 
 .H3desc {
