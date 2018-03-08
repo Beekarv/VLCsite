@@ -132,13 +132,16 @@ nav .painel {
 }
 
 .n-wrap {
-	float: left;
+    width: 300px;
+	float: none;
+    margin: auto;
 }
 
 .email-sub {
 	width: 200px;
 	height: 30px;
 	border: none;
+    display: inline-block;
 	float: left;
 	outline: none;
 	padding-left: 8px;
@@ -146,15 +149,17 @@ nav .painel {
 
 .send-sub {
 	float: left;
-	width: 100px;
+	width: 92px;
 	height: 30px;
+    display: inline-block;
 	background: #ff5701;
 	color: #FFF;
 	border: none;
+    cursor: pointer;
 }
 
 .send-sub:hover {
-	background: #674382;
+	background: #c95820;
 }
 
 footer {
@@ -189,8 +194,8 @@ footer {
 }
 
 .socialMedia .social {
-	width: 51px;
-	height: 51px;
+	width: 34px;
+	height: 34px;
 	border: 2px solid #FFF;
 	float: left;
 	margin-right: 10px;
@@ -204,6 +209,10 @@ footer {
 	margin-top: -4px;
 }
 
+.social > svg {
+    float: left;
+    margin: 5px;
+}
 /* COLUNA DIREITA */
 .col-right {
 	margin: 0px;
