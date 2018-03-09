@@ -8,7 +8,7 @@
 /* Removendo alguns elementos padrão desnecessários */
 body {
 	overflow-x: hidden;
-	background: #DDD;
+	background: #fff;
 }
 
 a {
@@ -207,7 +207,7 @@ footer {
 .socialMedia .social {
 	width: 34px;
 	height: 34px;
-	border: 2px solid #FFF;
+	border: 2px solid #333;
 	float: left;
 	margin-right: 10px;
 	cursor: pointer;

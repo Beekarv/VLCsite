@@ -56,9 +56,10 @@
 /* SEGUNDA SEÇÃO */
 /* ------------- */
 .second {
+	width: 100%;
 	height: auto;
-    background: #FFF;
-    border-top: 3px solid #ff5701;
+	padding: 25px 0px;
+	float: left;
 }
 
 h2, h3, .H3desc, .v-desc{
@@ -71,66 +72,70 @@ h2, h3, .H3desc, .v-desc{
 h2, h3 {
     font-size: 5vmin;
 }
-
-.s-info {
-    float: left;
-    margin-top: 40px;
-}
-
 .v-desc {
     width: 40%;
-    margin-top: 20px;
+    margin: 15px 10%;
     color: #444;
 }
 
-.grid {
-    float: left;
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-bottom: 50px;
+.crossBar {
+	width: 100%;
+	height: 320px;
+	float: left;
+	background: #ff5701;
+	position: relative;
 }
 
-.grid .cell {
-    display: inline-block;
-    float: left;
-    width: 28%;
-    height: 300px;
-    margin-right: 2%;
-    background: #FFF;
-    border-top: 3px solid #ff5701;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+.crossBar .vIMG {
+	width: 50%;
+	height: 100%;
+	background: url(https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12f2c4d1be2d45c3f4ca402468dcb340&auto=format&fit=crop&w=751&q=80) center no-repeat;
 }
 
-.cell .icon {
-    width: 100px;
-    height: 100px;
-    float: none;
-    margin: 30px auto;
-    background: #497853;
+.crossBar .vDetails {
+	width: 40%;
+	height: calc(100% - 30px);
+	padding: 15px 5%;
 }
 
-.cell .title {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
+.crossBar .vDetails .title {
+	display: block;
+	float: left;
+	font-size: 4vmin;
+	color: #FFF;
 }
 
-.cell .description {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 20px;
-    padding: 0px 50px;
+.crossBar .vDetails .description {
+	display: block;
+	float: left;
+	margin-top: 10px;
+	font-size: 2.7vmin;
+	color: #FFF;
 }
 
-.row {
-    width: 100%;
-    float: left;
-    margin-top: 40px;
+.onLeft {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
-.row > .cell:nth-child(3) {
-    margin-right: 0px;
+.onRight {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.sCTA {
+	width: 220px;
+	height: 45px;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	background: #ff5701;
+	/* Posicionamento */
+	float: left;
+	margin-top: 40px;
+	margin-left: calc(50% - 110px);
 }
 
 
