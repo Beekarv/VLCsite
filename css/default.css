@@ -193,7 +193,8 @@ footer {
 	height: 70px;
 	float: left;
 	margin: 5%;
-	background: #222;
+	background: url(img/logo-alpha.png) center no-repeat;
+	background-size: cover;
 }
 
 .socialMedia {
