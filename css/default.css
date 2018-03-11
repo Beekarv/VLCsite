@@ -188,13 +188,18 @@ footer {
 	margin-right: 0.5%;
 }
 
+.col-left {
+	width: 20%;
+	margin-left: 13%;
+}
+
 .col-left .footerLogo {
 	width: 90%;
 	height: 70px;
 	float: left;
 	margin: 5%;
-	background: url(img/logo-alpha.png) center no-repeat;
-	background-size: cover;
+	background: url(../img/logo-alpha.png) left center no-repeat;
+	background-size: auto 100%;
 }
 
 .socialMedia {
