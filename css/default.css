@@ -60,7 +60,7 @@ header {
 nav {
 	float: right;
     margin-right: 10%;
-	width: 460px;
+	width: auto;
 	overflow: hidden;
 }
 
