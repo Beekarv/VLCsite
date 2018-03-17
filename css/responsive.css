@@ -1,0 +1,9 @@
+@media screen and (max-width: 900px) {
+  .logo {
+  	margin-left: 5%;
+  }
+
+  nav {
+  	margin-right: 5%;
+  }
+}
