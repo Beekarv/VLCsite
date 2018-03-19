@@ -1,170 +1,164 @@
-/* -------------- */
-/* PRIMEIRA SEÇÃO */
-/* -------------- */
+/* FIRST SECTION */
 .first {
-	position: relative;
-	height: 460px;
-	margin-top: 70px;
+	width: 100%;
+	padding: 0px;
+	padding-bottom: 60px;
 }
 
 
-/* ------------- */
-/* SEGUNDA SEÇÃO */
-/* ------------- */
+/* SECOND SECTION */
 .second {
+	border-top: 2px solid #eee;
+	padding-bottom: 20px;
+}
+
+h1, h2 {
 	width: 100%;
-	height: auto;
-	padding: 25px 0px;
 	float: left;
-}
-
-h2, h3, .H3desc, .v-desc{
-    float: left;
-    clear: both;
-    margin-left: 10%;
-    color: #ff5701;
-}
-
-h2, h3 {
-    font-size: 5vmin;
-}
-.v-desc {
-    width: 40%;
-    margin: 15px 10%;
-    margin-bottom: 35px;
-    color: #444;
-}
-
-.crossBar {
-	width: 100%;
-	height: 320px;
-	float: left;
-	background: #ff5701;
-	position: relative;
-}
-
-.crossBar .vIMG {
-	width: 50%;
-	height: 100%;
-	background: url(https://images.unsplash.com/photo-1505424297051-c3ad50b055ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12f2c4d1be2d45c3f4ca402468dcb340&auto=format&fit=crop&w=751&q=80) center no-repeat;
-}
-
-.crossBar .vDetails {
-	width: 40%;
-	height: calc(100% - 30px);
-	padding: 15px 5%;
-}
-
-.crossBar .vDetails .title {
 	display: block;
-	float: left;
 	font-size: 4vmin;
-	color: #FFF;
+	color: #ff5701;
+	text-align: center;
+	margin-top: 30px;
 }
 
-.crossBar .vDetails .description {
+.hd1, .hd2, .cta-text, .advtg-name, .advtg-desc {
+	width: 100%;
+	float: left;
 	display: block;
+	margin-top: 15px;
+	font-size: 2.3vmin;
+	color: #777;
+	text-align: center;
+}
+
+.wrapper {
 	float: left;
-	margin-top: 10px;
-	font-size: 2.7vmin;
-	color: #FFF;
-}
-
-.onLeft {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-
-.onRight {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-
-.sCTA {
-	width: 220px;
-	height: 45px;
-	border: none;
-	color: #FFF;
-	cursor: pointer;
-	background: #ff5701;
-	/* Posicionamento */
-	float: left;
-	margin-top: 40px;
-	margin-left: calc(50% - 110px);
-}
-
-
-/* -------------- */
-/* TERCEIRA SEÇÃO */
-/* -------------- */
-.third {
-	width: 100%;
-	height: auto;
-	min-height: 500px;
-	float: left;
-    background: #FFF;
-    position: relative;
-}
-
-.heading {
-	width: 100%;
-	height: auto;
-	float: left;
-	margin-top: 20px;
-}
-
-.H3desc {
-	margin-top: 10px;
-	color: #555;
-}
-
-.card-row {
-	width: 80%;
-	height: 300px;
-	float: left;
-	margin-left: 10%;
-    margin-bottom: 100px;
+	margin: 20px 22.5%;
+	margin-bottom: 50px;
+	width: 55%;
+	height: 250px;
+	position: relative;
 }
 
 .card {
-	width: 30%;
-	height: 320px;
-	float: left;
-	margin-top: 30px;
-	margin-right: 5%;
-	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
-	transition: margin 0.2s linear;
-}
-
-.card:hover {
-	margin-top: 25px;
-}
-
-.card:nth-child(3) { 
-	margin-right: 0%;
-}
-
-.preco {
-	width: 100%;
-	font-size: 55px;
+	position: absolute;
+	width: 33.3%;
+	height: 200px;
+	border: 1px solid #ff5701;
+	background: #fff;
 	color: #ff5701;
-	margin-top: 110px;
 	text-align: center;
+	left: 0px;
+	bottom: 0px;
+	z-index: 5;
+	cursor: default;
+	user-select: none;
 }
 
-.preco span {
-	font-size: 14px;
+.right {
+	left: auto;
+	right: 0px;
 }
 
-.up, .down {
+.huge {
+	height: 260px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	bottom: -30px;
+	z-index: 10;
+	border: none;
+	color: #FFF;
+	background: #ff5701;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.1);
+}
+
+.card > .divider {
+	width: 80%;
+	height: 1px;
+	margin: 5px 10%;
+	background: #ff5701;
+}
+
+.huge > .divider {
+	width: 80%;
+	height: 1px;
+	margin: 5px 10%;
+	background: #FFF;
+}
+
+.plan-speed {
 	width: 100%;
-	font-size: 14px;
-	text-align: center;
+	font-size: 4.4vmin;
+	margin: 25% 0px;
 }
 
-.down {
-	margin-top: 60px;
+.huge > .plan-speed {
+	color: #fff;
+	margin-bottom: 55px;
+}
+
+.plan-name {
+	font-size: 1.55vmin;
+	color: #ff5701;
+}
+
+.plan-price {
+	font-size: 3.2vmin;
+}
+
+.cta-text > strong {
+	color: #ff5701;
+}
+
+.cta {
+	float: left;
+	width: 30%;
+	margin: 25px auto;
+	margin-left: 35%;
+	padding: 15px;
+}
+
+
+/* THIRD SECTION */
+.third {
+	border-top: 2px solid #eee;
+	padding-bottom: 80px;
+}
+
+.advtg {
+	width: calc(30% - 2px);
+	height: 250px;
+	float: left;
+	border: 1px solid #ff5701;
+	position: relative;
+	margin-left: 5%;
+}
+
+.advtg:nth-child(1) {
+	margin-left: 0px;
+}
+
+.advtg > .icon {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top: 20px;
+	margin-left: calc(50% - 30px);
+	margin-right: calc(50% - 30px);
+	background: url(https://cdn1.iconfinder.com/data/icons/social-media-stamps1/94/youtube.png) center no-repeat;
+}
+
+.advtg-name {
+	font-size: 2vmin;
+	color: #ff5701;
+}
+
+.advtg-desc {
+	width: 90%;
+	float: left;
+	margin-left: 5%;
+	font-size: 2vmin;
+	color: #777;
 }

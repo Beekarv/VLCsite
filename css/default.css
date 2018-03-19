@@ -154,23 +154,25 @@ header > .menu-trigger {
   display: none; }
 
 .triggered-element {
-  width: 25%;
+  width: 55%;
   height: calc(100vh - 48px);
   position: absolute;
   background-color: #FFF;
   right: 0%;
-  top: 48px; }
+  top: 48px; 
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.1);
+}
 
 .triggered-source {
 	width: auto;
 	height: calc(100vh - 48px);
-  margin-top: 0px;
-  overflow: hidden;
+  	margin-top: 0px;
+  	overflow: hidden;
 	position: relative;
 }
 
 #trigger:not(checked) ~ .triggered-element {
-  right: -25%;
+  right: -55%;
   opacity: 0;
   transition: all ease-in-out 0.2s; }
 

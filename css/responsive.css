@@ -3,16 +3,54 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+
+}
+
 @media screen and (max-width: 940px) {
-	  
+	section {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	header .logo {
+		margin-left: 5%;
+	}
+
+	.mainNav {
+		margin-right: 5%;
+	}
+
+	.image1 .img-1 {
+		left: 5%;
+	}
+
+	.image1 .img-2 {
+		right: 5%;
+	}
+
+	.wrapper {
+		width: 100%;
+		margin: 60px 0px;
+	}
+
+	.card {
+		height: 240px;
+	}
+
+	.huge {
+		height: 300px;
+	}
 }
 
-@media screen and (max-width: 799px) {
-  .mainNav {
-  	display: none;
-  }
+@media screen and (max-width: 640px) {
+	.mainNav {
+	  display: none;
+	}
 
-  .menu-trigger, .triggered-element {
-  	display: block;
-  }
+	.menu-trigger, .triggered-element {
+	  display: block;
+	}
 }
+
