@@ -16,8 +16,17 @@ a {
 }
 
 button {
+	border: none;
+	background: #ff5701;
+	color: #FFF;
+	transition: all 0.2s linear;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 	cursor: pointer;
 	outline: none;
+}
+
+button:hover {
+	background: #c95820;
 }
 
 .container {
@@ -32,28 +41,20 @@ button {
 }
 
 section {
-	width: 100%;
+	width: 80%;
+	padding: 0px 10%;
 	float: left;
 	clear: both;
-}
-
-header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 67px;
-	border-bottom: 3px solid #ff5701;
-	background: #FFF;
-	z-index: 9999;
+	position: relative;
 }
 
 .logo {
 	width: 90px;
 	height: 60px;
 	float: left;
-	background: no-repeat url(http://www.netnil.com.br/wp/wp-content/uploads/2017/05/LOGO-VLC-1.png);
-	background-size: 87px;
+	background: no-repeat url(../img/logo-alpha.png);
+	background-position: center;
+	background-size: 47%;
 	margin-left: 10%;
 }
 
@@ -77,31 +78,131 @@ nav ul > li {
 	display: inline-block;
 }
 
-ul > li > a {
+ul > li > a, .credits > a {
 	color: #BBB;
 	font-size: 2vmin;
 	transition: color 0.2s linear;
 }
 
-ul > li > a:hover {
+ul > li > a:hover, .credits:hover > a {
 	color: #ff5701;
 }
 
-nav .painel {
-	float: right;
-	width: 130px;
-	margin-left: 0px;
-	margin-top: 17px;
+header {
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	background: #FFF;
+	z-index: 9999;
+	border-bottom: 3px solid #ff5701;
 }
 
-.phone {
-    float: left;
-    margin-top: 15px;
-    margin-left: 30px;
-    padding: 10px;
-    font-size: 13px;
-    background: #ff5701;
-    color: #FFF;
+header .logo {
+	width: 130px;
+	height: 60px;
+	background-color: #ff5701;
+	float: left;
+	margin-left: 10%;
+}
+
+header .callUs {
+	float: left;
+	width: 130px;
+	height: 26px;
+	font-size: 12px;
+	background: #ff5701;
+	border: none;
+	color: #FFF;
+	margin-top: 10px;
+	margin-left: 20px;
+	transition: all 0.2s linear;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+}
+
+.callUs:hover {
+	background: #c95820;
+}
+
+header > nav {
+	float: right;
+	margin-right: 10%;
+}
+
+header > nav > a {
+	float: left;
+	margin-top: 11px;
+	margin-left: 25px;
+	color: #ff5701;
+}
+
+header > .menu-trigger {
+	float: right;
+	width: 45px;
+	height: 45px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin-right: 5%;
+}
+
+.menu-trigger > svg {
+	float: left;
+	margin: 6px;
+}
+
+#trigger {
+  display: none; }
+
+.triggered-element {
+  width: 25%;
+  height: calc(100vh - 48px);
+  position: absolute;
+  background-color: #FFF;
+  right: 0%;
+  top: 48px; }
+
+.triggered-source {
+	width: auto;
+	height: calc(100vh - 48px);
+  margin-top: 0px;
+  overflow: hidden;
+	position: relative;
+}
+
+#trigger:not(checked) ~ .triggered-element {
+  right: -25%;
+  opacity: 0;
+  transition: all ease-in-out 0.2s; }
+
+#trigger:checked ~ .triggered-element {
+  right: 0px;
+  opacity: 1; }
+
+.mNav {
+	float: left;
+	width: 100%;
+	color: #888;
+	padding: 10px 15px;
+  	transition: all ease-in-out 0.2s;
+}
+
+.mNav:hover {
+	color: #ff5701;
+}
+
+.mPanel {
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 40px;
+	border: none;
+	background: #ff5701;
+	color: #fff;
+}
+
+.menu-trigger, .triggered-element {
+	display: none;
 }
 
 .showFrame {
@@ -144,15 +245,6 @@ nav .painel {
 	height: 34px;
 	margin-left: 20px;
 	margin-top: 14px;
-	border: none;
-	background: #ff5701;
-	color: #FFF;
-	transition: all 0.2s linear;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-}
-
-.painel:hover {
-    background: #c95820;
 }
 
 /* ------ */
@@ -219,6 +311,7 @@ nav .painel {
 	color: #FFF;
 	border: none;
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
 }
 
 .send-sub:hover {
@@ -227,7 +320,7 @@ nav .painel {
 
 footer {
 	width: 100%;
-	height: 250px;
+	height: auto;
 	float: left;
 	background: #333;
 }
@@ -235,7 +328,7 @@ footer {
 .col-left, .col-mid, .col-right {
 	float: left;
 	width: 33%;
-	height: 250px;
+	height: 180px;
 	position: relative;
 	margin-right: 0.5%;
 }
@@ -250,6 +343,7 @@ footer {
 	height: 70px;
 	float: left;
 	margin: 5%;
+	margin-top: 9%;
 	background: url(../img/logo-alpha.png) left center no-repeat;
 	background-size: auto 100%;
 }
@@ -259,7 +353,7 @@ footer {
 	width: 90%;
 	height: 55px;
 	left: 5%;
-	bottom: 20px;
+	bottom: 10px;
 }
 
 .socialMedia .social {
@@ -295,7 +389,16 @@ footer {
 }
 
 .col-right ul, .col-mid ul {
-	margin-left: 15px;
+	margin-left: 5%;
 	line-height: 26px;
 	list-style-type: none;
+}
+
+.credits {
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	padding: 15px 0px;
+	color: #BBB;
 }

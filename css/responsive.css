@@ -1,51 +1,18 @@
+@media screen and (min-width: 1440px) {
+  /* WHEN SCREEN IS TOO LARGE, THIS WILL APPLY */
+
+}
+
 @media screen and (max-width: 940px) {
-  .logo, h2, h3, .H3desc, .v-desc, .col-left {
-  	margin-left: 5%;
-  }
-
-  nav {
-  	margin-right: 5%;
-  }
-
-  .image1 .img-1 {
-  	left: 5%;
-  }
-
-  .image1 .img-2 {
-  	right: 5%;
-  }
-
-  .card-row {
-  	width: 90%;
-  	margin: 5%;
-  	margin-top: 0px;
-  }
-
-  .col-left, .col-mid, .col-right {
-  	width: 29%;
-  }
+	  
 }
 
 @media screen and (max-width: 799px) {
-  .logo, h2, h3, .H3desc, .v-desc {
-  	margin-left: 5%;
+  .mainNav {
+  	display: none;
   }
 
-  nav {
-  	margin-right: 5%;
-  }
-
-  .image1 .img-1 {
-  	left: 5%;
-  }
-
-  .image1 .img-2 {
-  	right: 5%;
-  }
-
-  .card-row {
-  	width: 90%;
-  	margin: 5%;
-  	margin-top: 0px;
+  .menu-trigger, .triggered-element {
+  	display: block;
   }
 }

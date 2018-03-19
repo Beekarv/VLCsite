@@ -1,0 +1,126 @@
+/* FIRST SECTION */
+.first {
+	width: 100%;
+	padding: 0px;
+	padding-bottom: 60px;
+}
+
+/* SECOND SECTION */
+.second {
+	border-top: 2px solid #eee;
+	padding-bottom: 20px;
+}
+
+h1, h2 {
+	width: 100%;
+	float: left;
+	display: block;
+	font-size: 4vmin;
+	color: #ff5701;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.hd1, .hd2, .cta-text {
+	width: 100%;
+	float: left;
+	display: block;
+	margin-top: 15px;
+	font-size: 2.3vmin;
+	color: #777;
+	text-align: center;
+}
+
+.wrapper {
+	float: left;
+	margin: 20px 22.5%;
+	margin-bottom: 50px;
+	width: 55%;
+	height: 250px;
+	position: relative;
+}
+
+.card {
+	position: absolute;
+	width: 33.3%;
+	height: 200px;
+	border: 1px solid #ff5701;
+	background: #fff;
+	color: #ff5701;
+	text-align: center;
+	left: 0px;
+	bottom: 0px;
+	z-index: 5;
+	cursor: default;
+	user-select: none;
+}
+
+.right {
+	left: auto;
+	right: 0px;
+}
+
+.huge {
+	height: 260px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	bottom: -30px;
+	z-index: 10;
+	border: none;
+	color: #FFF;
+	background: #ff5701;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.1);
+}
+
+.card > .divider {
+	width: 80%;
+	height: 1px;
+	margin: 5px 10%;
+	background: #ff5701;
+}
+
+.huge > .divider {
+	width: 80%;
+	height: 1px;
+	margin: 5px 10%;
+	background: #FFF;
+}
+
+.plan-speed {
+	width: 100%;
+	font-size: 4.4vmin;
+	margin: 25% 0px;
+}
+
+.huge > .plan-speed {
+	color: #fff;
+	margin-bottom: 55px;
+}
+
+.plan-name {
+	font-size: 1.55vmin;
+	color: #ff5701;
+}
+
+.plan-price {
+	font-size: 3.2vmin;
+}
+
+.cta-text > strong {
+	color: #ff5701;
+}
+
+.cta {
+	float: left;
+	width: 30%;
+	margin: 25px auto;
+	margin-left: 35%;
+	padding: 15px;
+}
+
+/* THIRD SECTION */
+.third {
+	border-top: 2px solid #eee;
+	padding-bottom: 80px;
+}
