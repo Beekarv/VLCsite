@@ -1,10 +1,30 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   /* WHEN SCREEN IS TOO LARGE, THIS WILL APPLY */
+  .wrapper {
+  	width: 70%;
+  	height: 400px;
+  	margin: 70px 15%;
+  }
 
+  .card {
+  	height: 330px;
+  	bottom: 0px;
+  }
+
+  .huge {
+  	height: 430px;
+  	bottom: -55px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+	.plan-speed {
+		font-size: 3vmin;
+	}
 
+	.plan-price {
+		font-size: 2vmin;
+	}
 }
 
 @media screen and (max-width: 940px) {
