@@ -14,7 +14,7 @@
 		padding-right: 5%;
 	}
 
-	header .logo {
+	header .logo, .col-left {
 		margin-left: 5%;
 	}
 
@@ -28,6 +28,10 @@
 
 	.image1 .img-2 {
 		right: 5%;
+	}
+
+	.col-left {
+		width: 25%;
 	}
 
 	.wrapper {
@@ -51,6 +55,52 @@
 
 	.menu-trigger, .triggered-element {
 	  display: block;
+	}
+
+	.image1 .img-1, .image1 .img-2 {
+		width: 35%;
+	}
+
+	.image1 .img-2 {
+		top: 167px;
+	}
+
+	.assinantes {
+		height: auto;
+	}
+
+	.assinantes div {
+		width: 100%;
+	}
+
+	.assinantes div p {
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	.assinantes .painel {
+		width: 50%;
+		float: left;
+		margin-left: 25%;
+		margin-bottom: 15px;
+	}
+
+	.counterDesk {
+		bottom: 55px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.triggered-element {
+		width: 100%;
+	}
+
+	header .logo {
+		width: 85px;
+	}
+
+	.newsletter {
+		width: 100%;
 	}
 }
 

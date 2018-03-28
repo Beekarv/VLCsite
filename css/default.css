@@ -95,6 +95,7 @@ header {
 	background: #FFF;
 	z-index: 9999;
 	border-bottom: 3px solid #ff5701;
+	top: -1px;
 }
 
 header .logo {
@@ -155,36 +156,47 @@ header > .menu-trigger {
 
 .triggered-element {
   width: 55%;
-  height: calc(100vh - 48px);
+  height: auto;
   position: absolute;
   background-color: #FFF;
   right: 0%;
-  top: 48px; 
+  top: 48px;
+  z-index: 9998;
   box-shadow: 0 0 3px 2px rgba(0,0,0,0.1);
 }
 
 .triggered-source {
 	width: auto;
-	height: calc(100vh - 48px);
+	height: auto;
   	margin-top: 0px;
+  	padding-bottom: 100px;
   	overflow: hidden;
 	position: relative;
 }
 
 #trigger:not(checked) ~ .triggered-element {
-  right: -55%;
+  top: -100vh;
   opacity: 0;
   transition: all ease-in-out 0.2s; }
 
 #trigger:checked ~ .triggered-element {
-  right: 0px;
+  top: 48px;
   opacity: 1; }
+
+.triggered-source > nav {
+	width: 80%;
+	float: left;
+	margin: 0px 10%;
+}
 
 .mNav {
 	float: left;
 	width: 100%;
+	margin: 10px 0px;
+	margin-bottom: 0px;
 	color: #888;
 	padding: 10px 15px;
+	background: #EEE;
   	transition: all ease-in-out 0.2s;
 }
 
