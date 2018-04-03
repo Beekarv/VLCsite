@@ -58,8 +58,9 @@
 #myUL {
 	float: right;
 	width: 75%;
-	height: 360px;
+	height: auto;
 	list-style-type: none;
+	margin-bottom: 50px;
 }
 
 #myUL > li {
