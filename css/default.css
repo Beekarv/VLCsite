@@ -7,6 +7,7 @@
 
 /* Removendo alguns elementos padrão desnecessários */
 body {
+	max-width: 100vw;
 	overflow-x: hidden;
 	background: #fff;
 }
@@ -223,23 +224,21 @@ header > .menu-trigger {
 	width: 100%;
 	height: 380px;
 	position: relative;
+	overflow: hidden;
 	float: left;
 	background: #222;
 }
 
-.showFrame > h1 {
+.showFrame > h1, .showFrame > .h1d {
 	float: left;
-	width: 100%;
+	clear: both;
 	margin-top: 140px;
 	margin-left: 50px;
 	color: #FFF;
 }
 
 .showFrame > .h1d {
-	float: left;
 	margin-top: 25px;
-	margin-left: 50px;
-	color: #FFF;
 }
 
 .assinantes {

@@ -111,6 +111,11 @@
 }
 
 @media screen and (max-width: 400px) {
+	section {
+		width: 100%;
+		padding: 0px;
+	}
+
 	.triggered-element {
 		width: 100%;
 	}
@@ -119,8 +124,24 @@
 		width: 85px;
 	}
 
+	.faq-frame {
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
 	.newsletter {
 		width: 100%;
+	}
+
+	.col-left, .col-mid, .col-right {
+		margin: 0px;
+		width: 100%;
+	}
+
+	.credits {
+		width: 80%;
+		margin-left: 10%;
 	}
 }
 
