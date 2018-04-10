@@ -1,0 +1,68 @@
+.plans {
+    float: left;
+}
+
+.selector-bar {
+    width: 100%;
+    height: 52px;
+    float: left;
+    position: relative;
+    background: #ff5701;
+}
+
+.selector-bar > p {
+    float: left;
+    color: #FFF;
+    margin: 16px 20px;
+}
+
+.selector {
+    float: right;
+    width: auto;
+    margin: 11px 20px;
+}
+
+#selTrigger {
+	float: right;
+	background: #FFF;
+	color: #ff5701;
+	padding: 8px;
+	clear: both;
+}
+
+#selTrigger:hover {
+	padding: 8px 14px;
+	background: #FFF;
+}
+
+.options {
+	position: absolute;
+	right: 20px;
+	top: 43px;
+	margin-top: 1px;
+	background: #FFF;
+	width: 200px;
+	border: 1px solid #eee;
+	border-bottom: none;
+}
+
+.selOption {
+	width: calc(100% - 20px);
+	padding: 10px;
+	float: right;
+	text-align: center;
+	color: #BBB;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+}
+
+.selOption:hover {
+	background: #DDD;
+	color: #ff5701;
+}
+
+.pricing {
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+}
